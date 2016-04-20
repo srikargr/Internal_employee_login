@@ -1,0 +1,138 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Internal_employee_login.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="TitleContentPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+
+    <asp:ContentPlaceHolder ID="HeadContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="ScriptContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrapCyborg.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-glyphicons.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <%--    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">--%>
+    <%--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>--%>
+    <%--    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>--%>
+
+    <style>
+        @media screen and (min-width: 768px) {
+            .modal-dialog {
+                left: 39%;
+                right: auto;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container" id="main">
+            <div class="navbar navbar-fixed-top">
+                <div class="container">
+
+
+                    <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#"></a>
+
+                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="Home.aspx">Home Page</a>
+                            </li>
+
+                            <li>
+                                <a href="userProfileHome.aspx">User Profile</a>
+                            </li>
+
+                            <li>
+                                <a href="TimeSheet_home.aspx">Time Sheets</a>
+                            </li>
+                            <li>
+                                <a href="BankDetails.aspx">Bank Information</a>
+                            </li>
+                            <li>
+                                <a href="#">Pay Checks</a>
+                            </li>
+                        </ul>
+
+                        <%--<ul class="nav navbar-nav pull-right">
+
+                            <li>
+                                <a id="login_anchor" href="Login.aspx" runat="server">Log In</a>
+                            </li>
+                            <li>
+                                <a id="signup_anchor" href="Signup.aspx" runat="server">Sign Up</a>
+                            </li>
+
+                            <li>
+                                <asp:Label ID="Label1" runat="server"></asp:Label>
+                            </li>
+
+                            <li class="dropdown" id="myaccount_drop" runat="server">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account <strong class="caret"></strong></a>
+
+                                <ul class="dropdown-menu">
+                                    <li>
+
+                                        <a href="UpdateProfile.aspx">Update Profile</a>
+                                    </li>
+
+                                    <li class="divider"></li>
+
+                                    <li>
+                                        <a href="Logout.aspx">Log Out</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>--%>
+                        <!-- end nav pull-right -->
+
+                    </div>
+                    <!-- end nav-collapse -->
+
+                </div>
+                <!-- end container -->
+            </div>
+            <!-- end navbar -->
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="container">
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <br />
+            <br />
+            <footer>
+                <div id="footerbanner">
+                    <div id="footer"></div>
+                </div>
+            </footer>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/npm.js"></script>
+        </div>
+    </form>
+</body>
+</html>

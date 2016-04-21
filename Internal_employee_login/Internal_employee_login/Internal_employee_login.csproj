@@ -70,9 +70,7 @@
   <ItemGroup>
     <Content Include="AdminCreateUser.aspx" />
     <Content Include="AdminHome.aspx" />
-    <Content Include="Admin\Admin.aspx" />
-    <Content Include="Admin\Admin_create.aspx" />
-    <Content Include="Admin\Admin_timesheet.aspx" />
+    <Content Include="AdminTimeSheet.aspx" />
     <Content Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Properties\PublishProfiles\profile1.pubxml" />
@@ -126,26 +124,12 @@
     <Compile Include="AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Admin\Admin.aspx.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
+    <Compile Include="AdminTimeSheet.aspx.cs">
+      <DependentUpon>AdminTimeSheet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Admin.aspx.designer.cs">
-      <DependentUpon>Admin.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Admin_create.aspx.cs">
-      <DependentUpon>Admin_create.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Admin_create.aspx.designer.cs">
-      <DependentUpon>Admin_create.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Admin_timesheet.aspx.cs">
-      <DependentUpon>Admin_timesheet.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Admin_timesheet.aspx.designer.cs">
-      <DependentUpon>Admin_timesheet.aspx</DependentUpon>
+    <Compile Include="AdminTimeSheet.aspx.designer.cs">
+      <DependentUpon>AdminTimeSheet.aspx</DependentUpon>
     </Compile>
     <Compile Include="BankDetails.aspx.cs">
       <DependentUpon>BankDetails.aspx</DependentUpon>

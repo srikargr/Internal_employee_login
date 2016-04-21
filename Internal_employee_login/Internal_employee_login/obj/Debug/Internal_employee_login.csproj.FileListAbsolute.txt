@@ -35,6 +35,6 @@ D:\Users\it3680105\Documents\Visual Studio 2015\Projects\Internal_employee_login
 D:\Users\it3680105\Documents\Visual Studio 2015\Projects\Internal_employee_login\Internal_employee_login\Internal_employee_login\bin\Internal_employee_login.pdb
 D:\Users\it3680105\Documents\Visual Studio 2015\Projects\Internal_employee_login\Internal_employee_login\Internal_employee_login\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\Users\it3680105\Documents\Visual Studio 2015\Projects\Internal_employee_login\Internal_employee_login\Internal_employee_login\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\Users\it3680105\Documents\Visual Studio 2015\Projects\Internal_employee_login\Internal_employee_login\Internal_employee_login\obj\Debug\Internal_employee_login.csprojResolveAssemblyReference.cache
 D:\Users\it3680105\Documents\Visual Studio 2015\Projects\Internal_employee_login\Internal_employee_login\Internal_employee_login\obj\Debug\Internal_employee_login.dll
 D:\Users\it3680105\Documents\Visual Studio 2015\Projects\Internal_employee_login\Internal_employee_login\Internal_employee_login\obj\Debug\Internal_employee_login.pdb
+D:\Users\it3680105\Documents\Visual Studio 2015\Projects\Internal_employee_login\Internal_employee_login\Internal_employee_login\obj\Debug\Internal_employee_login.csprojResolveAssemblyReference.cache

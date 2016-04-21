@@ -71,6 +71,7 @@
     <Content Include="AdminCreateUser.aspx" />
     <Content Include="AdminHome.aspx" />
     <Content Include="AdminTimeSheet.aspx" />
+    <Content Include="ChangePassword.aspx" />
     <Content Include="packages.config" />
     <Content Include="Site1.Master" />
     <None Include="Properties\PublishProfiles\profile1.pubxml" />
@@ -103,8 +104,9 @@
     <Content Include="TimeSheet_fill.aspx" />
     <Content Include="TimeSheet_home.aspx" />
     <Content Include="TimeSheet_periodSelection.aspx" />
+    <Content Include="UpdateSecurityDetails.aspx" />
+    <Content Include="UserPersonalDetails.aspx" />
     <Content Include="userProfileHome.aspx" />
-    <Content Include="userProfileUpdate.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -137,6 +139,13 @@
     </Compile>
     <Compile Include="BankDetails.aspx.designer.cs">
       <DependentUpon>BankDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -181,19 +190,26 @@
     <Compile Include="TimeSheet_periodSelection.aspx.designer.cs">
       <DependentUpon>TimeSheet_periodSelection.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UpdateSecurityDetails.aspx.cs">
+      <DependentUpon>UpdateSecurityDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateSecurityDetails.aspx.designer.cs">
+      <DependentUpon>UpdateSecurityDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserPersonalDetails.aspx.cs">
+      <DependentUpon>UserPersonalDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserPersonalDetails.aspx.designer.cs">
+      <DependentUpon>UserPersonalDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="userProfileHome.aspx.cs">
       <DependentUpon>userProfileHome.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="userProfileHome.aspx.designer.cs">
       <DependentUpon>userProfileHome.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="userProfileUpdate.aspx.cs">
-      <DependentUpon>userProfileUpdate.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="userProfileUpdate.aspx.designer.cs">
-      <DependentUpon>userProfileUpdate.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

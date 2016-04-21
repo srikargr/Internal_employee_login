@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="Userprofile_register.aspx">View user profile</a>
+                            <a href="userProfileUpdate.aspx">View user profile</a>
                         </td>
                     </tr>
                 </table>

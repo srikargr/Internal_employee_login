@@ -76,7 +76,7 @@ namespace Internal_employee_login
 
             Session["field1"] = Calendar1.SelectedDate.Date;
             Session["field2"] = Calendar2.SelectedDate.Date;
-            Response.Redirect("~/TimeSheet.aspx");
+            Response.Redirect("~/TimeSheet_fill.aspx");
         }
 
         //public DateTime startdate

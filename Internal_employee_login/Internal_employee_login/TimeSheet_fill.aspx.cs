@@ -9,10 +9,32 @@ namespace Internal_employee_login
 {
     public partial class TimeSheet_fill : System.Web.UI.Page
     {
+
+        private List<string> TextBoxIdCollection
+        {
+            get
+            {
+                var collection = ViewState["TextBoxIdCollection"] as List<string>;
+                return collection ?? new List<string>();
+            }
+            set { ViewState["TextBoxIdCollection"] = value; }
+        }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             // if(!Page)
-            Time_table();
+            
+            foreach(string textboxId in TextBoxIdCollection)
+            {
+                TableRow th_row = new TableRow();
+                Table2.Rows.Add(th_row);
+                TableCell tcell = new TableCell();
+                tcell.Width = 20;
+                var tb = new TextBox { ID = textboxId };
+                tcell.Controls.Add(tb);
+                th_row.Cells.Add(tcell);
+            }
+            
         }
 
         protected void Time_table()
@@ -20,6 +42,7 @@ namespace Internal_employee_login
             //Getting the values of Start Date and end date from previous page
             DateTime StartDate = DateTime.Now.Date;
             DateTime EndDate = DateTime.Now.Date;
+            var collection = new List<string>();
             try
             {
                 StartDate = (DateTime)(Session["field1"]);
@@ -33,11 +56,11 @@ namespace Internal_employee_login
             double counter = 0;
             //int count = 15;
             //int counter = 0;
-            TableRow th_row = new TableRow();
-            Table2.Rows.Add(th_row);
+            
 
             TableHeaderRow th_row_1 = new TableHeaderRow();
             Table2.Rows.Add(th_row_1);
+            
             while (counter < count)
             {
                 TableCell tcell = new TableCell();
@@ -55,6 +78,8 @@ namespace Internal_employee_login
                 th_row_1.Cells.Add(tcell);
                 counter++;
             }
+            TableRow th_row = new TableRow();
+            Table2.Rows.Add(th_row);
             counter = 0;
             while (counter < count)
             {
@@ -62,14 +87,15 @@ namespace Internal_employee_login
                 tcell.Width = 20;
                 TextBox tb = new TextBox();
                 // Set a unique ID for each TextBox added
-                tb.ID = "TextBoxRow_" + counter;
-                tb.Width = 15;
+                tb.ID = "TextBoxRow_" + counter.ToString();
+                //tb.Width = 15;
                 // Add the control to the TableCell
+                collection.Add(tb.ID);
                 tcell.Controls.Add(tb);
                 th_row.Cells.Add(tcell);
                 counter++;
             }
-
+            TextBoxIdCollection = collection;
         }
 
         protected void MultiView1_ActiveViewChanged(object sender, EventArgs e)
@@ -79,27 +105,36 @@ namespace Internal_employee_login
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            DateTime StartDate = DateTime.Now.Date;
-            DateTime EndDate = DateTime.Now.Date;
-            try
-            {
-                StartDate = (DateTime)(Session["field1"]);
-                EndDate = (DateTime)(Session["field2"]);
-            }
-            catch (Exception ex)
-            {
-                Label1.Text = ex.Message;
-            }
-            double count = (EndDate - StartDate).TotalDays;
-            double counter = 0;
-            int sumOfHours = 0;
-            List<string> data = new List<string>();
+            //DateTime StartDate = DateTime.Now.Date;
+            //DateTime EndDate = DateTime.Now.Date;
+            //try
+            //{
+            //    StartDate = (DateTime)(Session["field1"]);
+            //    EndDate = (DateTime)(Session["field2"]);
+            //}
+            //catch (Exception ex)
+            //{
+            //    Label1.Text = ex.Message;
+            //}
+            //double count = (EndDate - StartDate).TotalDays;
+            //double counter = 0;
+            //int sumOfHours = 0;
+            //List<string> data = new List<string>();
 
-            while (counter < count)
+            //while (counter < count)
+            //{
+            //    TextBox x = new TextBox { ID = "TextBoxRow_" + counter.ToString() };
+            //    x.Text = "4";
+            //    counter++;
+            //}
+
+            foreach (Control ctr in Table2.Controls)
             {
-                TextBox x = new TextBox { ID = "TextBoxRow_" + counter };
-                data.Add(x.Text);
-                counter++;
+                if (ctr is TextBox)
+                {
+                    string value = ((TextBox)ctr).Text;
+                    Label1.Text += value;
+                }
             }
         }
     }

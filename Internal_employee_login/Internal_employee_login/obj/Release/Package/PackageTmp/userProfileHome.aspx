@@ -13,7 +13,7 @@
                 <table runat="server" class="table-condensed table-responsive">
                     <tr>
                         <td>
-                            <a href="userProfileUpdate.aspx">Edit/Update user profile</a>
+                            <a href="userProfileUpdate.aspx">Edit/Update Personal Details</a>
                             
                         </td>
                     </tr>
@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="Userprofile_register.aspx">View user profile</a>
+                            <a href="userProfileUpdate.aspx">Edit/Update Security details</a>
                         </td>
                     </tr>
                 </table>

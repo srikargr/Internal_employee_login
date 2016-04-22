@@ -22,6 +22,24 @@ namespace Internal_employee_login {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
+        /// Label2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
+        
+        /// <summary>
+        /// table1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTable table1;
+        
+        /// <summary>
         /// User_email control.
         /// </summary>
         /// <remarks>
@@ -31,22 +49,22 @@ namespace Internal_employee_login {
         protected global::System.Web.UI.WebControls.TextBox User_email;
         
         /// <summary>
-        /// employee_id control.
+        /// firstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox employee_id;
+        protected global::System.Web.UI.WebControls.TextBox firstName;
         
         /// <summary>
-        /// password control.
+        /// lastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.TextBox lastName;
         
         /// <summary>
         /// Button1 control.

@@ -74,6 +74,9 @@
     <Content Include="ChangePassword.aspx" />
     <Content Include="packages.config" />
     <Content Include="Site1.Master" />
+    <Content Include="AdminTimeSheetAproval.aspx" />
+    <Content Include="TimeSheetView.aspx" />
+    <Content Include="WebForm1.aspx" />
     <None Include="Properties\PublishProfiles\profile1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -169,6 +172,20 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="AdminTimeSheetAproval.aspx.cs">
+      <DependentUpon>AdminTimeSheetAproval.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminTimeSheetAproval.aspx.designer.cs">
+      <DependentUpon>AdminTimeSheetAproval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheetView.aspx.cs">
+      <DependentUpon>TimeSheetView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheetView.aspx.designer.cs">
+      <DependentUpon>TimeSheetView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TimeSheet_fill.aspx.cs">
       <DependentUpon>TimeSheet_fill.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -210,6 +227,13 @@
     </Compile>
     <Compile Include="userProfileHome.aspx.designer.cs">
       <DependentUpon>userProfileHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <PropertyGroup>

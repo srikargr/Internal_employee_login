@@ -16,7 +16,7 @@
     </asp:ContentPlaceHolder>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrapCyborg.min.css" rel="stylesheet" />
+    <%--<link href="css/bootstrapCyborg.min.css" rel="stylesheet" />--%>
     <link href="css/bootstrap-glyphicons.css" rel="stylesheet" />
 
     <!-- Custom CSS -->
@@ -54,7 +54,7 @@
 
                     <a class="navbar-brand" href="#"></a>
 
-                    <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <div class="nav-collapse collapse navbar-responsive-collapse" runat="server" id="NavBar">
                         <ul class="nav navbar-nav">
                             <li>
                                 <a href="Home.aspx">Home Page</a>
@@ -72,6 +72,9 @@
                             </li>
                             <li>
                                 <a href="#">Pay Checks</a>
+                            </li>
+                            <li>
+                                <asp:LinkButton ID="logout" Text="Log out" OnClick="logout_Click" runat="server" />
                             </li>
                         </ul>
 
@@ -125,13 +128,10 @@
             </div>
             <br />
             <br />
-            <footer>
-                <div id="footerbanner">
-                    <div id="footer"></div>
-                </div>
-            </footer>
+            <div id="footerbanner" class="navbar navbar-fixed-bottom">
+                <div id="footer"></div>
+            </div>
             <script src="js/bootstrap.min.js"></script>
-            <script src="js/npm.js"></script>
         </div>
     </form>
 </body>

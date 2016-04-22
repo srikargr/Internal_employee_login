@@ -16,7 +16,7 @@
                 <table runat="server" class="table-condensed table-responsive">
                     <tr>
                         <td>
-                            <a href="TimeSheets_create.aspx">Create Time sheet</a>
+                            <a href="TimeSheet_PeriodSelection.aspx">Create Time sheet</a>
                         </td>
                     </tr>
                     <tr>
@@ -26,7 +26,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="TimeSheets_create.aspx">Edit/Update Time sheet</a>
+                            <%--<a href="TimeSheets_create.aspx">Edit/Update Time sheet</a>--%>
                         </td>
                     </tr>
                 </table>

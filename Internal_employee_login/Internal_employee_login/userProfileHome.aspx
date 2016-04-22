@@ -24,7 +24,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="userProfileUpdate.aspx">Edit/Update Security details</a>
+                            <a href="UpdateSecurityDetails.aspx">Edit/Update Security details</a>
                         </td>
                     </tr>
                 </table>

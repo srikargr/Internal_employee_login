@@ -9,7 +9,7 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
     <div class="row">
         <div class="col-xs-10 col-sm-12">
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <asp:Label ID="Label1" runat="server"></asp:Label>
             <p>Following are the Time Sheets that have not yet been approved:</p>
             <br />
             <br />

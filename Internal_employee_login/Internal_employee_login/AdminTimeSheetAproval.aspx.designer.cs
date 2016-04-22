@@ -22,6 +22,24 @@ namespace Internal_employee_login {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
+        /// strt_date control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label strt_date;
+        
+        /// <summary>
+        /// end_date control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label end_date;
+        
+        /// <summary>
         /// table2 control.
         /// </summary>
         /// <remarks>

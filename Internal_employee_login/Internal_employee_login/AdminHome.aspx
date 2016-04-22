@@ -9,8 +9,8 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
     <div class="row">
         <div class="col-xs-10 col-sm-12">
-            aDMIN HOMEPAGE
-                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/Admin.aspx.designer.cs">HyperLink</asp:HyperLink>
+            <a href="AdminCreateUser.aspx">Create a new user</a><br />
+            <a href="AdminTimeSheet.aspx">Approve Timesheets</a><br />
         </div>
     </div>
 </asp:Content>

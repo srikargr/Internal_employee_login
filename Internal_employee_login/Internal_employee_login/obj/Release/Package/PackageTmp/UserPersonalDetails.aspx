@@ -47,5 +47,5 @@
     </table>
     <br />
 
-    <asp:Button ID="Button1" runat="server" Text="Next Page" CssClass="btn" OnClick="Button1_Click" />
+    <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="btn" OnClick="Button1_Click" />
 </asp:Content>

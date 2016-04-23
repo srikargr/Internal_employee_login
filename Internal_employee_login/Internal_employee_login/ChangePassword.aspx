@@ -14,9 +14,10 @@
         <li>Should have atleast 1 capital letter</li>
         <li>Should be alphanumeric</li>
     </ul>
+    <asp:Label ID="Label1" runat="server"></asp:Label>
     <br />
     <br />
-    <table class="table table-responsive">
+    <table id="table1" runat="server" class="table table-responsive">
         <tr>
             <td>Password:</td>
             <td>
@@ -34,4 +35,7 @@
                     ControlToCompare="password" ControlToValidate="cnfrm_password"></asp:CompareValidator></td>
         </tr>
     </table>
+    <br />
+    <br />
+    <asp:Button ID="Button1" runat="server" Text="Submit" CssClass="btn" OnClick="Button1_Click" />
 </asp:Content>

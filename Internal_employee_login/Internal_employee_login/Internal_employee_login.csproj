@@ -76,6 +76,7 @@
     <Content Include="packages.config" />
     <Content Include="Site1.Master" />
     <Content Include="AdminTimeSheetAproval.aspx" />
+    <Content Include="TimeSheetdetails.aspx" />
     <Content Include="TimeSheetView.aspx" />
     <None Include="Properties\PublishProfiles\profile1.pubxml" />
     <None Include="Web.Debug.config">
@@ -107,6 +108,7 @@
     <Content Include="TimeSheet_fill.aspx" />
     <Content Include="TimeSheet_home.aspx" />
     <Content Include="TimeSheet_periodSelection.aspx" />
+    <Content Include="TimeSheet_view_trial.aspx" />
     <Content Include="UpdateSecurityDetails.aspx" />
     <Content Include="UserPersonalDetails.aspx" />
     <Content Include="Userprofile.aspx" />
@@ -187,6 +189,13 @@
     <Compile Include="AdminTimeSheetAproval.aspx.designer.cs">
       <DependentUpon>AdminTimeSheetAproval.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TimeSheetdetails.aspx.cs">
+      <DependentUpon>TimeSheetdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheetdetails.aspx.designer.cs">
+      <DependentUpon>TimeSheetdetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TimeSheetView.aspx.cs">
       <DependentUpon>TimeSheetView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -214,6 +223,13 @@
     </Compile>
     <Compile Include="TimeSheet_periodSelection.aspx.designer.cs">
       <DependentUpon>TimeSheet_periodSelection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimeSheet_view_trial.aspx.cs">
+      <DependentUpon>TimeSheet_view_trial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimeSheet_view_trial.aspx.designer.cs">
+      <DependentUpon>TimeSheet_view_trial.aspx</DependentUpon>
     </Compile>
     <Compile Include="UpdateSecurityDetails.aspx.cs">
       <DependentUpon>UpdateSecurityDetails.aspx</DependentUpon>

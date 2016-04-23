@@ -39,12 +39,14 @@ namespace Internal_employee_login
 
                         if (sqlReader["EMP_ID"].Equals(emp_id) && sqlReader["EMP_PASSWORD"].Equals(paswrd))
                         {
-                            //HttpCookie employee_id = new HttpCookie("userName");
-                            //employee_id.Value = emp_id;
-                            //employee_id.Expires = DateTime.Now.AddMinutes(2);
-                            //Response.Cookies.Add(employee_id);
+                            
 
                             FormsAuthentication.SetAuthCookie(emp_id, false);
+                            HttpCookie username = new HttpCookie("userName");
+                            username.Value = User.Identity.Name;
+                            //employee_id.Expires = DateTime.Now.AddMinutes(2);
+                            Response.Cookies.Add(username);
+
                             //if admin then change the page
                             //if (sqlReader["EMP_ID"].Equals("admin"))
                             //{

@@ -21,7 +21,7 @@
                     <asp:TableHeaderCell>End Date</asp:TableHeaderCell>
                 </asp:TableHeaderRow>
             </asp:Table>--%>
-            <asp:GridView ID="GridView1" CssClass="table table-borderedtable-responsive" runat="server" AutoGenerateColumns="False" DataKeyNames="TIMESHEET_ID" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" CssClass="table table-bordered table-responsive" runat="server" AutoGenerateColumns="False" DataKeyNames="TIMESHEET_ID" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                 <Columns>
                     <asp:HyperLinkField DataTextField="TIMESHEET_ID" HeaderText="Time Sheet ID" InsertVisible="false" SortExpression="TIMESHEET_ID" DataNavigateUrlFields="TIMESHEET_ID" DataNavigateUrlFormatString="AdminTimeSheetAproval.aspx?details={0}" />
                     <%--<asp:BoundField DataField="TIMESHEET_ID" HeaderText="TIMESHEET_ID" InsertVisible="False" ReadOnly="True" SortExpression="TIMESHEET_ID" />--%>

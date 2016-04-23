@@ -35,9 +35,10 @@ namespace Internal_employee_login
             {
                 dbConnection.Open();
 
-                string query = "INSERT INTO EMPLOYEE(EMP_ID,EMP_FIRSTNM,EMP_LASTNM,EMAIL) VALUES('" +
-                                employee_id + "','"+firstName.Text+"','"+lastName.Text
-                                +"','" + User_email.Text + "');";
+                string query = "INSERT INTO EMPLOYEE(EMP_ID,EMP_FIRSTNM,EMP_LASTNM,EMAIL,PAY_PER_HOUR,ROLE) VALUES('" +
+                                employee_id + "','" + firstName.Text + "','" + lastName.Text
+                                + "','" + User_email.Text + "','" + pay_per_hour.Text + "','" +
+                                Role_user.Text + "');";
 
                 sqlcommand = new SqlCommand(query, dbConnection);
                 int number = sqlcommand.ExecuteNonQuery();

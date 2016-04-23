@@ -67,6 +67,24 @@ namespace Internal_employee_login {
         protected global::System.Web.UI.WebControls.TextBox lastName;
         
         /// <summary>
+        /// pay_per_hour control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox pay_per_hour;
+        
+        /// <summary>
+        /// Role_user control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Role_user;
+        
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>

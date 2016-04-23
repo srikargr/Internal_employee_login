@@ -58,6 +58,15 @@ namespace Internal_employee_login {
         protected global::System.Web.UI.WebControls.TextBox location_txt;
         
         /// <summary>
+        /// pan_card control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox pan_card;
+        
+        /// <summary>
         /// contact_num control.
         /// </summary>
         /// <remarks>

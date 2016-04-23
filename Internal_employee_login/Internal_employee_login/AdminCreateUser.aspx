@@ -31,6 +31,18 @@
                         <asp:TextBox ID="lastName" runat="server" CssClass="form-control" Width="250px"></asp:TextBox></td>
                 </tr>
                 <tr>
+                    <td>Pay per Hour</td>
+
+                    <td>
+                        <asp:TextBox ID="pay_per_hour" runat="server" CssClass="form-control" Width="250px"></asp:TextBox></td>
+                </tr>
+                <tr>
+                    <td>Role</td>
+
+                    <td>
+                        <asp:TextBox ID="Role_user" runat="server" CssClass="form-control" Width="250px"></asp:TextBox></td>
+                </tr>
+                <tr>
                     <td>
                         <asp:Button ID="Button1" runat="server" Text="Create User" CssClass="btn" OnClick="Button1_Click" /></td>
                 </tr>

@@ -15,6 +15,9 @@
             <strong>Password:</strong> <asp:TextBox ID="paswd_text" runat="server" CssClass="form-control" Width="250px" TextMode="Password"></asp:TextBox>
             <br />
             <asp:Button ID="Button1" runat="server" Text="Login" CssClass="btn" OnClick="Button1_Click"/>
+            <br />
+            <br />
+            <a href="ForgotPassword.aspx">Forgot Password</a>
         </asp:Panel>
 
     </div>

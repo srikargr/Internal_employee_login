@@ -7,7 +7,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ScriptContentPlaceHolder" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
-    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    <asp:Label ID="Label1" runat="server"></asp:Label>
     <table id="secquestion" runat="server" class="table table-condensed">
         <%--<tr>
             <td>Password:</td>

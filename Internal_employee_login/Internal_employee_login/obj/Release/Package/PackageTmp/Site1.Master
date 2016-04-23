@@ -39,7 +39,7 @@
         }
     </style>
 </head>
-<body>
+<body style="background-color:ivory">
     <form id="form1" runat="server">
         <div class="container" id="main">
             <div class="navbar navbar-fixed-top">

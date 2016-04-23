@@ -46,30 +46,30 @@ namespace Internal_employee_login
 
                             FormsAuthentication.SetAuthCookie(emp_id, false);
                             //if admin then change the page
-                            if (sqlReader["EMP_ID"].Equals("admin"))
-                            {
-                                Response.Redirect("~/AdminHome.aspx");
-                            }
+                            //if (sqlReader["EMP_ID"].Equals("admin"))
+                            //{
+                            //    Response.Redirect("~/AdminHome.aspx");
+                            //}
                             //if any other id then go to home page
+                            //else
+                            //{
+                            //string query = "SELECT * FROM EMPLOYEE WHERE EMP_ID = '" + emp_id.Trim() +"';";
+                            //sqlCmnd1 = new SqlCommand(query, dbConnection);
+                            //sqlReader1 = sqlCmnd1.ExecuteReader();
+                            //if (sqlReader1.Read())
+                            //{
+                            if (string.IsNullOrEmpty(sqlReader["SEC_QUES1"].ToString()) && string.IsNullOrEmpty(sqlReader["SEC_QUES2"].ToString()) &&
+                                string.IsNullOrEmpty(sqlReader["SEC_QUES3"].ToString()) && string.IsNullOrEmpty(sqlReader["ANSWER1"].ToString()) &&
+                                string.IsNullOrEmpty(sqlReader["ANSWER2"].ToString()) && string.IsNullOrEmpty(sqlReader["ANSWER3"].ToString()))
+                            {
+                                Response.Redirect("~/Userprofile.aspx");
+                            }
                             else
                             {
-                                //string query = "SELECT * FROM EMPLOYEE WHERE EMP_ID = '" + emp_id.Trim() +"';";
-                                //sqlCmnd1 = new SqlCommand(query, dbConnection);
-                                //sqlReader1 = sqlCmnd1.ExecuteReader();
-                                //if (sqlReader1.Read())
-                                //{
-                                    if(string.IsNullOrEmpty(sqlReader["SEC_QUES1"].ToString()) && string.IsNullOrEmpty(sqlReader["SEC_QUES2"].ToString()) &&
-                                        string.IsNullOrEmpty(sqlReader["SEC_QUES3"].ToString()) && string.IsNullOrEmpty(sqlReader["ANSWER1"].ToString()) &&
-                                        string.IsNullOrEmpty(sqlReader["ANSWER2"].ToString()) && string.IsNullOrEmpty(sqlReader["ANSWER3"].ToString()))
-                                    {
-                                        Response.Redirect("~/Userprofile.aspx");
-                                    }
-                                    else
-                                    {
-                                        Response.Redirect("~/Home.aspx");
-                                    }
-                                //}  
+                                Response.Redirect("~/Home.aspx");
                             }
+                            //}  
+
 
                             //FormsAuthentication.SignOut();
                         }

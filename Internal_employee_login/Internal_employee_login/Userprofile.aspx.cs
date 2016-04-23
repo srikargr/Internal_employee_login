@@ -92,10 +92,11 @@ namespace Internal_employee_login
             try
             {
                 dbConnection.Open();
-                string query = "update emp_login set emp_password = '"+password.Text
-                                +"',sec_ques1='" + sec_ques1.SelectedItem.Text + "',sec_ques2='" +
+                string query = "update emp_login set emp_password = '" + password.Text
+                                + "',sec_ques1='" + sec_ques1.SelectedItem.Text + "',sec_ques2='" +
                                 sec_ques2.SelectedItem.Text + "',sec_ques3='" + sec_ques3.SelectedItem.Text + "',answer1='" +
-                                Answer1.Text + "',answer2='" + Answer2.Text + "',answer3='" + Answer3.Text + "';";
+                                Answer1.Text + "',answer2='" + Answer2.Text + "',answer3='" + Answer3.Text
+                                + "' where emp_id ='" + User.Identity.Name + "';";
                 sqlcmnd = new SqlCommand(query, dbConnection);
                 sqlcmnd.ExecuteNonQuery();
                 Response.Redirect("~/Home.aspx");

@@ -35,17 +35,16 @@ namespace Internal_employee_login
             {
                 dbConnection.Open();
 
-                string query = "INSERT INTO EMPLOYEE(EMP_ID,EMP_FIRSTNM,EMP_LASTNM,EMAIL,PAY_PER_HOUR,ROLE) VALUES('" +
+                string query = "INSERT INTO EMPLOYEE(EMP_ID,EMP_FIRSTNM,EMP_LASTNM,EMAIL,PAY_PER_HOUR) VALUES('" +
                                 employee_id + "','" + firstName.Text + "','" + lastName.Text
-                                + "','" + User_email.Text + "','" + pay_per_hour.Text + "','" +
-                                Role_user.Text + "');";
+                                + "','" + User_email.Text + "','" + pay_per_hour.Text + "');";
 
                 sqlcommand = new SqlCommand(query, dbConnection);
                 int number = sqlcommand.ExecuteNonQuery();
 
                 query = string.Empty;
-                query = "INSERT INTO EMP_LOGIN(EMP_ID,EMP_PASSWORD) VALUES('" +
-                        employee_id + "','" + password + "')";
+                query = "INSERT INTO EMP_LOGIN(EMP_ID,EMP_PASSWORD,ROLE) VALUES('" +
+                        employee_id + "','" + password + "','" + Role_user.Text + "');";
                 sqlcommand = new SqlCommand(query, dbConnection);
                 number = sqlcommand.ExecuteNonQuery();
 
@@ -55,15 +54,15 @@ namespace Internal_employee_login
                 table1.Visible = false;
 
                 //message body for email
-                Label2.Text = "Welcome to FruitBowl Digial. We are happy to welcome you into our team" + "<br /><br />";
-                Label2.Text += "Please login with the following details to access the Employee portal";
+                Label2.Text = "Welcome to FruitBowl Digial. We are happy to welcome you into our team." + "<br /><br />";
+                Label2.Text += "Please login with the following details to access the Employee portal" + "<br /><br />";
                 Label2.Text += "Login ID:    " + employee_id + "<br />";
                 Label2.Text += "Password:    " + password + "<br /><br /><br />";
-                Label2.Text += "<p>You will be prompted to change the password the first time you login.</p>";
-                Label2.Text += "<p> </p>";
-                Label2.Text += "<p>Administrative Team</p>";
-                Label2.Text += "<p>FruitBowl Digital</p>";
+                Label2.Text += "You will be prompted to change the password the first time you login." + "<br /><br /><br />";
+                Label2.Text += "Administrative Team" + "<br />";
+                Label2.Text += "FruitBowl Digital";
 
+                Label2.Visible = false;
                 mailsender(Label2.Text);
             }
             catch (SqlException ex)
